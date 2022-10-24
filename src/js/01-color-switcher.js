@@ -1,11 +1,16 @@
+const refs = {
+  btnStart: document.querySelector('[data-start]'),
+  btnStop: document.querySelector('[data-stop]'),
+  body: document.querySelector('body'),
+};
+const TIME_INTERVAL = 1000;
+
+// Чуть-чуть красоты для кнопок
+refs.btnStart.classList.add('active');
+refs.btnStop.classList.add('active');
+
 // Только глобальные переменные и функции
 // ------------------------------------------------------------------------------------------
-// const refs = {
-//   buttonStart: document.querySelector('[data-start]'),
-//   buttonStop: document.querySelector('[data-stop]'),
-//   body: document.querySelector('body'),
-// };
-// const TIME_INTERVAL = 1000;
 // let timerID = null;
 // let isWorking = false;
 
@@ -38,13 +43,6 @@
 
 // С использованием Объекта
 // ---------------------------------------------------------------------------------------
-// const refs = {
-//   btnStart: document.querySelector('[data-start]'),
-//   btnStop: document.querySelector('[data-stop]'),
-//   body: document.querySelector('body'),
-// };
-// const TIME_INTERVAL = 1000;
-
 // const switcher = {
 //   timerID: null,
 //   isWorking: false,
@@ -93,13 +91,6 @@
 
 // С использованием Класса (ООП)
 // ---------------------------------------------------------------------------------------
-// const refs = {
-//   btnStart: document.querySelector('[data-start]'),
-//   btnStop: document.querySelector('[data-stop]'),
-//   body: document.querySelector('body'),
-// };
-// const TIME_INTERVAL = 1000;
-
 // class Switcher {
 //   constructor() {
 //     this.timerID = null;
@@ -145,13 +136,6 @@
 
 // Kласс независящий от имен внешних функций (как у Репеты)
 //-----------------------------------------------------------------------------------
-const refs = {
-  btnStart: document.querySelector('[data-start]'),
-  btnStop: document.querySelector('[data-stop]'),
-  body: document.querySelector('body'),
-};
-const TIME_INTERVAL = 1000;
-
 class Switcher {
   constructor({ onTick }) {
     this.timerID = null;

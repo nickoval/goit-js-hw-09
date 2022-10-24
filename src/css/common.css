@@ -16,3 +16,41 @@ img {
   display: block;
   max-width: 100%;
 }
+
+input {
+  font-size: 1rem;
+}
+
+button {
+  width: 5rem;
+  letter-spacing: 0.5;
+  height: 2rem;
+  border-radius: 0.25rem;
+}
+
+button.active {
+  background-color: rgb(169, 211, 211);
+  cursor: pointer;
+}
+
+button.active:hover,
+button.active:focus {
+  font-weight: 700;
+  background-color: rgb(57, 185, 185);
+}
+
+.timer {
+  display: flex;
+  gap: 1rem;
+}
+
+.field {
+  width: 4rem;
+  text-align: center;
+  padding-top: 1rem;
+}
+
+.value {
+  font-size: 2rem;
+  font-weight: 500;
+}
