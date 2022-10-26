@@ -117,12 +117,12 @@ function createPromise(position, delay) {
 }
 
 function onFulfill({ position, delay }) {
-  Notiflix.Notify.success(`✅ Fulfilled promise ${position} in ${delay}ms`);
-  console.log(`✅ Fulfilled promise ${position} in ${delay}ms`);
+  Notiflix.Notify.success(`✅ Fulfilled promise ${position + 1} in ${delay}ms`);
+  console.log(`✅ Fulfilled promise ${position + 1} in ${delay}ms`);
 }
 
 function onReject({ position, delay }) {
-  Notiflix.Notify.failure(`❌ Rejected promise ${position} in ${delay}ms`);
-  console.log(`❌ Rejected promise ${position} in ${delay}ms`);
+  Notiflix.Notify.failure(`❌ Rejected promise ${position + 1} in ${delay}ms`);
+  console.log(`❌ Rejected promise ${position + 1} in ${delay}ms`);
 }
 // ====================================================================================
